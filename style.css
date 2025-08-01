@@ -1,0 +1,112 @@
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d9f0fc; /* Celeste pastel */
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #1e5fb5;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+main {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Botones por día */
+.dias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dias-grid a {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e5fb5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+.dias-grid a:hover {
+  background-color: #e0f0ff;
+}
+
+/* Menú individual */
+.menu-dia {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.menu-dia li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.menu-dia i {
+  margin-right: 10px;
+  color: #1e5fb5;
+}
+
+/* Link de regreso */
+a.back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #1e5fb5;
+  font-weight: bold;
+}
+
+/* Responsive para celulares */
+@media (max-width: 600px) {
+  .dias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+.menu-item {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.menu-item h2 {
+  font-size: 1.5em;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 1.2em;
+  margin: 0;
+}
